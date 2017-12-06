@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Adidas_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="K2B-9G-VjK">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="S8f-1j-sAY"/>
+                                    <constraint firstAttribute="width" secondItem="K2B-9G-VjK" secondAttribute="height" multiplier="375:44" id="dbf-kh-wWK"/>
+                                    <constraint firstAttribute="width" constant="375" id="mbW-hY-XZc"/>
+                                </constraints>
+                                <color key="barTintColor" red="0.12179201100000001" green="0.58996009829999996" blue="0.99849957229999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </textAttributes>
+                                <textAttributes key="largeTitleTextAttributes">
+                                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="Adidas" id="Ymh-qP-soA"/>
+                                </items>
+                            </navigationBar>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tnZ-bd-Tze">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="375" id="B3K-bu-GTW"/>
+                                    <constraint firstAttribute="height" constant="603" id="hWH-t3-kqh"/>
+                                    <constraint firstAttribute="width" secondItem="tnZ-bd-Tze" secondAttribute="height" multiplier="125:201" id="yyR-p2-mgH"/>
+                                </constraints>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.12179201100000001" green="0.58996009829999996" blue="0.99849957229999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="tnZ-bd-Tze" firstAttribute="top" secondItem="K2B-9G-VjK" secondAttribute="bottom" id="AhU-he-anu"/>
+                            <constraint firstItem="K2B-9G-VjK" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="RvP-Pe-8fS"/>
+                            <constraint firstItem="tnZ-bd-Tze" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ePL-cu-AAe"/>
+                            <constraint firstItem="K2B-9G-VjK" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="i2d-sc-b5p"/>
+                            <constraint firstItem="tnZ-bd-Tze" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="lG2-PZ-7hc"/>
+                            <constraint firstItem="K2B-9G-VjK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="sP3-Xb-7Vi"/>
+                            <constraint firstItem="tnZ-bd-Tze" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="yJV-Cg-4b0"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="AdidasWeb" destination="tnZ-bd-Tze" id="yXj-0h-c0A"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-79.200000000000003" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+</document>
